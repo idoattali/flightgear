@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="208.0" prefWidth="282.0"
+            style="-fx-background-color: #BDB76B;" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="view.Controller">
+    <children>
+        <TextField fx:id="port" layoutX="137.0" layoutY="45.0" prefHeight="11.0" prefWidth="121.0"
+                   promptText="5402 | 5555" style="-fx-control-inner-background: #556B2F;"/>
+        <Text layoutX="24.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Port:">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Text>
+        <Text layoutX="24.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter IP:">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="ip" layoutX="136.0" layoutY="104.0" prefHeight="17.0" prefWidth="122.0" promptText="127.0.0.1"
+                   style="-fx-control-inner-background: #556B2F;"/>
+        <Button fx:id="submit" layoutX="121.0" layoutY="163.0" mnemonicParsing="false" onAction="#Submit"
+                style="-fx-background-color: #556B2F;" text="Submit"/>
+    </children>
+</AnchorPane>
